@@ -1,0 +1,11 @@
+{
+  "kategori": "Geografi",
+  "edisi": "TTS Geografi: Bentang Alam Dunia",
+  "data": [
+    { "no": 1, "arah": "mendatar", "x": 0, "y": 0, "jawaban": "SAHARA", "clue": "Gurun panas terbesar di dunia yang terletak di Afrika." },
+    { "no": 3, "arah": "mendatar", "x": 2, "y": 2, "jawaban": "ETNA", "clue": "Gunung berapi aktif yang terletak di Sisilia, Italia." },
+    { "no": 1, "arah": "menurun", "x": 0, "y": 0, "jawaban": "SAMUDRA", "clue": "Lautan yang sangat luas di permukaan bumi." },
+    { "no": 2, "arah": "menurun", "x": 4, "y": 0, "jawaban": "ALPEN", "clue": "Rangkaian pegunungan besar yang membentang di Eropa." },
+    { "no": 4, "arah": "menurun", "x": 2, "y": 2, "jawaban": "EVEREST", "clue": "Puncak tertinggi di dunia yang berada di pegunungan Himalaya." }
+  ]
+}
