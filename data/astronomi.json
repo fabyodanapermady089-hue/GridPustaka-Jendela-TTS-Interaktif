@@ -1,0 +1,11 @@
+{
+  "kategori": "Astronomi",
+  "edisi": "TTS Astronomi: Jelajah Antariksa",
+  "data": [
+    { "no": 1, "arah": "mendatar", "x": 0, "y": 1, "jawaban": "GALAKSI", "clue": "Kumpulan bintang, gas, dan debu yang terikat gravitasi." },
+    { "no": 4, "arah": "mendatar", "x": 1, "y": 4, "jawaban": "ORBIT", "clue": "Lintasan planet saat mengelilingi matahari." },
+    { "no": 1, "arah": "menurun", "x": 0, "y": 1, "jawaban": "GERHANA", "clue": "Fenomena tertutupnya benda langit oleh benda langit lain." },
+    { "no": 2, "arah": "menurun", "x": 3, "y": 1, "jawaban": "ASTEROID", "clue": "Benda langit berbatu yang lebih kecil dari planet." },
+    { "no": 3, "arah": "menurun", "x": 5, "y": 1, "jawaban": "SATURNUS", "clue": "Planet keenam dari matahari yang memiliki cincin indah." }
+  ]
+}
