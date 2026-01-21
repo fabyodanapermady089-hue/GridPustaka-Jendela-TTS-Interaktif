@@ -1,0 +1,54 @@
+{
+  "kategori": "Ilmuwan",
+  "edisi": "TTS Tokoh: Penemu Dunia",
+  "data": [
+    {
+      "no": 1,
+      "arah": "mendatar",
+      "x": 1,
+      "y": 0,
+      "jawaban": "EINSTEIN",
+      "clue": "Fisikawan jenius yang mencetuskan teori Relativitas (E=mc²)."
+    },
+    {
+      "no": 3,
+      "arah": "mendatar",
+      "x": 0,
+      "y": 3,
+      "jawaban": "DARWIN",
+      "clue": "Ilmuwan Inggris yang mengemukakan teori evolusi lewat seleksi alam."
+    },
+    {
+      "no": 5,
+      "arah": "mendatar",
+      "x": 2,
+      "y": 5,
+      "jawaban": "TESLA",
+      "clue": "Penemu sistem arus listrik bolak-balik (AC) yang bersaing dengan Edison."
+    },
+    {
+      "no": 1,
+      "arah": "menurun",
+      "x": 1,
+      "y": 0,
+      "jawaban": "EDISON",
+      "clue": "Penemu lampu pijar paling produktif dan pendiri General Electric."
+    },
+    {
+      "no": 2,
+      "arah": "menurun",
+      "x": 5,
+      "y": 0,
+      "jawaban": "NEWTON",
+      "clue": "Fisikawan yang menemukan hukum gravitasi saat melihat buah apel jatuh."
+    },
+    {
+      "no": 4,
+      "arah": "menurun",
+      "x": 3,
+      "y": 3,
+      "jawaban": "WATT",
+      "clue": "Tokoh pengembang mesin uap; namanya dijadikan satuan daya listrik."
+    }
+  ]
+}
