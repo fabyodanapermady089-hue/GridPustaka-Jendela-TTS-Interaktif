@@ -1,202 +1,96 @@
-/* --- Root Variables --- */
 :root {
-    --primary-blue: #004a80; /* Warna biru khas redaksi koran */
-    --accent-gold: #fbc02d;
-    --correct-bg: #d4edda;
-    --wrong-bg: #f8d7da;
-    --cell-size: 45px;
-    --border-color: #333;
+    --primary-color: #0056b3;
+    --bg-color: #f4f7f6;
+    --cell-size: 40px; /* Ukuran kotak disesuaikan */
 }
 
-/* --- Global Reset --- */
 body {
-    font-family: 'Georgia', serif; /* Font bergaya koran klasik */
-    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
     margin: 0;
-    color: #333;
-    line-height: 1.6;
+    padding: 20px;
 }
 
-header {
-    background-color: var(--primary-blue);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-}
-
-/* --- Menu Navigasi --- */
-.theme-selector {
-    margin: 20px auto;
-    text-align: center;
-    padding: 10px;
-}
-
-.theme-selector span {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
+/* Header & Navigasi */
+header { text-align: center; margin-bottom: 20px; }
+.theme-selector { text-align: center; margin-bottom: 20px; }
 .btn-theme {
+    padding: 8px 15px;
+    margin: 5px;
+    border: 1px solid var(--primary-color);
     background: white;
-    color: var(--primary-blue);
-    border: 2px solid var(--primary-blue);
-    padding: 8px 20px;
-    margin: 0 5px;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
     border-radius: 20px;
 }
 
-.btn-theme:hover {
-    background: var(--primary-blue);
-    color: white;
-}
-
-/* --- Layout Utama --- */
+/* Container Utama */
 .game-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-    flex-wrap: wrap; /* Supaya turun ke bawah di layar kecil */
+    gap: 30px;
 }
 
-/* --- Papan TTS (Grid) --- */
+/* Papan TTS */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(10, var(--cell-size));
-    grid-template-rows: repeat(10, var(--cell-size));
-    gap: 1px;
-    background-color: var(--border-color);
-    border: 3px solid var(--border-color);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    gap: 1px; /* Garis antar kotak */
+    background-color: #444; /* Warna garis pembatas */
+    border: 2px solid #333;
+    padding: 1px;
 }
 
-.cell {
+.grid-cell {
     width: var(--cell-size);
     height: var(--cell-size);
-    background-color: #fff;
+    background-color: white; /* Kotak input harus putih */
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cell.black {
-    background-color: #222; /* Kotak hitam pemisah */
-}
-
-.cell input {
+.grid-cell input {
     width: 100%;
     height: 100%;
     border: none;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 20px;
     font-weight: bold;
-    color: #333;
-    outline: none;
-    padding: 0;
+    text-transform: uppercase;
     background: transparent;
+    outline: none;
 }
 
-.cell input:focus {
-    background-color: #fffde7;
+/* Kotak Hitam (Yang Tidak Ada Huruf) */
+.black-cell {
+    background-color: #222 !important;
 }
 
-.cell-num {
+/* Nomor Kecil di Pojok Kotak */
+.cell-number {
     position: absolute;
     top: 2px;
-    left: 4px;
-    font-size: 11px;
-    font-weight: bold;
-    color: #555;
-    pointer-events: none; /* Supaya tidak mengganggu klik input */
+    left: 2px;
+    font-size: 10px;
+    color: #333;
+    pointer-events: none;
 }
 
-/* --- Status Jawaban --- */
-.is-correct { background-color: var(--correct-bg) !important; }
-.is-wrong { background-color: var(--wrong-bg) !important; }
-
-/* --- Daftar Pertanyaan --- */
-.clues-wrapper {
-    flex: 1;
-    min-width: 300px;
+/* Panel Pertanyaan */
+.clue-box {
     background: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 300px;
 }
 
-.clue-box h3 {
-    border-bottom: 3px solid var(--primary-blue);
-    color: var(--primary-blue);
-    margin-top: 0;
-    padding-bottom: 5px;
-}
+.clue-list { list-style: none; padding: 0; }
+.clue-list li { margin-bottom: 10px; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
 
-.clue-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 25px;
-}
-
-.clue-list li {
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 0.95rem;
-}
-
-/* --- Tombol Aksi --- */
-.action-bar {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-}
-
-#check-btn {
-    flex: 2;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-#reset-btn {
-    flex: 1;
-    background-color: #6c757d;
-    color: white;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#check-btn:hover, #reset-btn:hover { opacity: 0.9; }
-
-/* --- Responsive (Mobile) --- */
-@media (max-width: 768px) {
-    :root {
-        --cell-size: 35px; /* Perkecil kotak di HP */
-    }
-    
-    .game-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .clues-wrapper {
-        width: 100%;
-    }
+/* Responsive untuk HP */
+@media (max-width: 600px) {
+    :root { --cell-size: 25px; }
+    .grid-cell input { font-size: 14px; }
 }
