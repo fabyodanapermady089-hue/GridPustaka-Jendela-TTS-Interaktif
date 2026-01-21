@@ -1,0 +1,33 @@
+# --- File Sampah Sistem Operasi ---
+# Mengabaikan file yang dibuat otomatis oleh Windows atau Mac
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Konfigurasi Editor ---
+# Mengabaikan pengaturan pribadi dari VS Code atau editor lainnya
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Logs & Temporary Files ---
+# Mengabaikan catatan error dan file sementara
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tmp/
+temp/
+
+# --- File Distribusi (Opsional) ---
+# Jika kamu menggunakan folder build atau dist nantinya
+dist/
+build/
