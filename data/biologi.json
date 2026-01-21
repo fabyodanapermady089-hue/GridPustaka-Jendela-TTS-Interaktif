@@ -6,7 +6,7 @@
       "no": 1,
       "arah": "menurun",
       "x": 6,
-      "y": 2,
+      "y": 1,
       "jawaban": "SITOPLASMA",
       "clue": "Cairan bening yang mengisi rongga sel dan tempat organel berada."
     },
@@ -14,7 +14,7 @@
       "no": 1,
       "arah": "mendatar",
       "x": 6,
-      "y": 2,
+      "y": 1,
       "jawaban": "SEL",
       "clue": "Satuan struktural dan fungsional terkecil dari makhluk hidup."
     },
@@ -22,31 +22,31 @@
       "no": 2,
       "arah": "mendatar",
       "x": 5,
-      "y": 4,
+      "y": 3,
       "jawaban": "STOMATA",
       "clue": "Mulut daun pada tumbuhan yang berfungsi sebagai tempat pertukaran gas."
     },
     {
       "no": 3,
       "arah": "mendatar",
-      "x": 6,
-      "y": 8,
+      "x": 2,
+      "y": 11,
       "jawaban": "AMILUM",
       "clue": "Zat tepung hasil proses fotosintesis yang disimpan sebagai cadangan makanan."
     },
     {
       "no": 4,
       "arah": "menurun",
-      "x": 11,
-      "y": 8,
+      "x": 10,
+      "y": 9,
       "jawaban": "ALGA",
       "clue": "Organisme autotrof yang hidup di air, sering disebut sebagai ganggang."
     },
     {
       "no": 5,
       "arah": "mendatar",
-      "x": 4,
-      "y": 10,
+      "x": 3,
+      "y": 13,
       "jawaban": "ENZIM",
       "clue": "Biokatalisator organik yang mempercepat reaksi kimia di dalam sel."
     }
