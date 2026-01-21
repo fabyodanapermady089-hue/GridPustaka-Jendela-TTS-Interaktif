@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridPustaka - TTS Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>GridPustaka</h1>
+            <p>Edisi Teka-Teki Silang Pengetahuan</p>
+        </div>
+    </header>
+
+    <main>
+        <nav class="theme-selector">
+            <span>Pilih Tema:</span>
+            <button onclick="loadCategory('biologi')" class="btn-theme">Biologi</button>
+            <button onclick="loadCategory('ilmuwan')" class="btn-theme">Ilmuwan</button>
+        </nav>
+
+        <section class="game-info">
+            <h2 id="current-title">Memuat Game...</h2>
+            <p id="current-desc">Silakan isi kotak-kotak di bawah ini dengan jawaban yang tepat.</p>
+        </section>
+
+        <div class="game-container">
+            <div class="board-wrapper">
+                <div id="tts-board" class="grid-container">
+                    </div>
+                
+                <div class="action-bar">
+                    <button id="check-btn" onclick="checkAnswers()">Cek Jawaban</button>
+                    <button id="reset-btn" onclick="resetGame()">Mulai Ulang</button>
+                </div>
+            </div>
+
+            <aside class="clues-wrapper">
+                <div class="clue-box">
+                    <h3>Mendatar</h3>
+                    <ul id="mendatar-list" class="clue-list">
+                        </ul>
+                </div>
+
+                <div class="clue-box">
+                    <h3>Menurun</h3>
+                    <ul id="menurun-list" class="clue-list">
+                        </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GridPustaka - Dibuat untuk Edukasi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
